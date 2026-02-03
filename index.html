@@ -2,285 +2,269 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JWeb — Portfolio</title>
     <link rel="icon" type="image/webp" href="pics/logo.webp" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="site-header">
-        <a class="brand" href="#home">
-          <img src="pics/logo.webp" alt="JWeb logo" />
-          <span>JWeb</span>
-        </a>
-        <nav class="site-nav">
-          <a href="#home">Home</a>
-          <a href="#work">My Work</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="cta" href="#contact">Let’s talk</a>
-      </header>
+    <header class="site-header">
+      <div class="logo-pill">
+        <img src="pics/logo.webp" alt="JWeb logo" />
+        <span>JWeb</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta-button" href="#contact">Let’s build</a>
+    </header>
 
-      <main>
-        <section id="home" class="hero">
-          <div class="hero-visual">
-            <video
-              class="hero-video"
-              autoplay
-              muted
-              loop
-              playsinline
-              poster="pics/MyAgentMarbella.png"
-            >
-              <source src="pics/herovideo.mp4" type="video/mp4" />
-            </video>
-            <div class="hero-glow"></div>
-            <div class="hero-grid"></div>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-bg">
+          <div class="hero-grid"></div>
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="pics/herovideo.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio of Jonas Abdulla</p>
+          <h1>
+            Designing bright, human-centric web experiences that feel alive.
+          </h1>
+          <p class="hero-subtitle">
+            I’m JWeb — a creative developer crafting modern, responsive sites
+            with a clean, positive energy. Scroll to explore the projects I’ve
+            built and the ones I collaborated on.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#work">See my work</a>
+            <a class="secondary" href="#contact">Get in touch</a>
           </div>
-          <div class="hero-content">
-            <p class="eyebrow">Portfolio • Web Design • Frontend</p>
-            <h1>
-              Hi, I’m Jonas Abdulla.
-              <span>I design joyful, high-impact web experiences.</span>
-            </h1>
-            <p class="lead">
-              JWeb is my digital studio for building modern, responsive websites with
-              a clean, positive aesthetic and a strong coding vibe. Discover the
-              projects I’ve shaped for clients and personal experiments.
+          <div class="hero-stats">
+            <div>
+              <span>10+</span>
+              <small>Projects delivered</small>
+            </div>
+            <div>
+              <span>100%</span>
+              <small>Custom-crafted builds</small>
+            </div>
+            <div>
+              <span>24/7</span>
+              <small>Passion for design</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work-section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">My Work</p>
+            <h2>Selected websites & collaborations</h2>
+            <p>
+              A curated set of projects I shipped, led, or co-created — each
+              designed with clarity, motion, and an uplifting feel.
             </p>
-            <div class="hero-actions">
-              <a class="primary" href="#work">Explore my work</a>
-              <a class="secondary" href="#contact">Get in touch</a>
-            </div>
-            <div class="hero-tags">
-              <span>UI/UX</span>
-              <span>Frontend Dev</span>
-              <span>Brand Presence</span>
-            </div>
           </div>
-        </section>
+          <div class="tag-cloud">
+            <span>Branding</span>
+            <span>UI/UX</span>
+            <span>Frontend</span>
+            <span>Motion</span>
+          </div>
+        </div>
 
-        <section id="work" class="work">
-          <div class="section-title">
-            <p>My Work</p>
-            <h2>Websites I crafted, collaborated on, or explored.</h2>
-          </div>
-          <div class="work-grid">
-            <article class="work-card featured">
-              <div class="card-media">
-                <img src="pics/MyAgentMarbella.png" alt="My Agent Marbella website" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Agency Collaboration — Nordstein GmbH</p>
+        <div class="work-grid">
+          <article class="work-card">
+            <img src="pics/MyAgentMarbella.png" alt="My Agent Marbella" />
+            <div class="work-content">
+              <div>
                 <h3>My Agent Marbella</h3>
                 <p>
-                  Premium real-estate presence crafted with a refined, cinematic look
-                  and a high-end client journey.
+                  Agency collaboration with Nordstein GmbH for a premium real
+                  estate experience.
                 </p>
-                <a href="https://myagentmarbella.com/" target="_blank" rel="noreferrer">
-                  Visit website
-                </a>
               </div>
-            </article>
+              <a href="https://myagentmarbella.com/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/NoxMisk.png" alt="Nox Misk perfume shop website" />
+          <article class="work-card">
+            <img src="pics/NoxMisk.png" alt="Noxmisk fragrance store" />
+            <div class="work-content">
+              <div>
+                <h3>Noxmisk</h3>
+                <p>Luxury perfume store concept, built for lead generation.</p>
               </div>
-              <div class="card-content">
-                <p class="tag">Demo • Perfume Shop</p>
-                <h3>Nox Misk</h3>
-                <p>Elegant product storytelling with a focus on premium fragrances.</p>
-                <a
-                  href="https://jonas201422.github.io/noxmisk/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
-              </div>
-            </article>
+              <a href="https://jonas201422.github.io/noxmisk/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/Doenerya.png" alt="Doenerya restaurant website" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Demo • Restaurant</p>
+          <article class="work-card">
+            <img src="pics/Doenerya.png" alt="Doenerya restaurant" />
+            <div class="work-content">
+              <div>
                 <h3>Doenerya</h3>
-                <p>A bold restaurant concept with layered imagery and strong contrast.</p>
-                <a
-                  href="https://jonas201422.github.io/doenerya-site/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
+                <p>Restaurant landing page with warm, inviting visuals.</p>
               </div>
-            </article>
+              <a href="https://jonas201422.github.io/doenerya-site/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/showmensbarber.png" alt="Showmens Barbershop website" />
+          <article class="work-card">
+            <img src="pics/Garage.png" alt="Melen automotive ambience" />
+            <div class="work-content">
+              <div>
+                <h3>Melen Garage</h3>
+                <p>Ambient car reseller concept for a friend’s project.</p>
               </div>
-              <div class="card-content">
-                <p class="tag">Demo • Barbershop</p>
-                <h3>Showmens Barbershop</h3>
-                <p>
-                  Confident, masculine styling for a grooming brand with personality.
-                </p>
-                <a
-                  href="https://jonas201422.github.io/showmens-website/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
-              </div>
-            </article>
+              <a href="https://jonas201422.github.io/melen/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/NextLevelBarbershop.png" alt="Next Level Barbershop booking" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Demo • Booking Flow</p>
+          <article class="work-card">
+            <img src="pics/NextLevelBarbershop.png" alt="Next Level Barbershop" />
+            <div class="work-content">
+              <div>
                 <h3>Next Level Barbershop</h3>
-                <p>Booking-focused experience with clear call-to-action design.</p>
-                <a
-                  href="https://jonas201422.github.io/next-level-barbershop-booking/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
+                <p>Barbershop booking flow with clean, bold typography.</p>
               </div>
-            </article>
+              <a
+                href="https://jonas201422.github.io/next-level-barbershop-booking/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/Garage.png" alt="Garage Old restaurant shisha bar website" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Demo • Restaurant / Shisha Bar</p>
+          <article class="work-card">
+            <img src="pics/GasthausAlteWelt.png" alt="Garage Old" />
+            <div class="work-content">
+              <div>
                 <h3>Garage Old</h3>
-                <p>Warm, nightlife-inspired layout with bold typography.</p>
-                <a
-                  href="https://jonas201422.github.io/garage-old/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
+                <p>Restaurant & shisha bar concept with late-night vibes.</p>
               </div>
-            </article>
+              <a href="https://jonas201422.github.io/garage-old/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
 
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/GasthausAlteWelt.png" alt="Alte Welt restaurant website" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Demo • Restaurant</p>
-                <h3>Alte Welt</h3>
-                <p>Classic, welcoming atmosphere for a local dining concept.</p>
-                <a
-                  href="https://jonas201422.github.io/AlteWelt"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
-              </div>
-            </article>
-
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/SHGroup.png" alt="SH Group dry ice cleaning website" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Client Concept • Industrial Services</p>
+          <article class="work-card">
+            <img src="pics/SHGroup.png" alt="SH Group" />
+            <div class="work-content">
+              <div>
                 <h3>SH Group</h3>
-                <p>
-                  A clean corporate presence for a dry ice cleaning startup in
-                  progress.
-                </p>
-                <a href="http://www.shgroup.at/" target="_blank" rel="noreferrer">
-                  Visit website
-                </a>
+                <p>Early-stage project for a dry ice cleaning company.</p>
               </div>
-            </article>
-
-            <article class="work-card">
-              <div class="card-media">
-                <img src="pics/pictureOfMe.png" alt="JWeb concept design" />
-              </div>
-              <div class="card-content">
-                <p class="tag">Concept • Automotive Ambience</p>
-                <h3>Melen</h3>
-                <p>Ambient automotive visuals for a friend’s lighting project.</p>
-                <a
-                  href="https://jonas201422.github.io/melen/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit demo
-                </a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" class="contact">
-          <div class="section-title">
-            <p>Contact</p>
-            <h2>Let’s build something bright together.</h2>
-          </div>
-          <div class="contact-card">
-            <div>
-              <h3>Jonas Abdulla</h3>
-              <p>
-                Phone: <a href="tel:+4369010143884">+43 690 10143884</a>
-              </p>
-              <p>
-                Email: <a href="mailto:jonasabdulla6@gmail.com">jonasabdulla6@gmail.com</a>
-              </p>
+              <a href="http://www.shgroup.at/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
             </div>
-            <div class="contact-details">
-              <p>
-                Based in Austria, working with international clients. Reach out for
-                modern websites, landing pages, or full portfolio experiences.
-              </p>
-              <div class="contact-actions">
-                <a class="primary" href="mailto:jonasabdulla6@gmail.com">Send an email</a>
-                <a class="secondary" href="tel:+4369010143884">Call me</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+          </article>
 
-      <footer class="site-footer">
-        <div class="footer-brand">
-          <img src="pics/logo.webp" alt="JWeb logo" />
+          <article class="work-card">
+            <img src="pics/GasthausAlteWelt.png" alt="Alte Welt" />
+            <div class="work-content">
+              <div>
+                <h3>Alte Welt</h3>
+                <p>Classic restaurant concept with cozy storytelling.</p>
+              </div>
+              <a href="https://jonas201422.github.io/AlteWelt" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img src="pics/showmensbarber.png" alt="Showmens barber" />
+            <div class="work-content">
+              <div>
+                <h3>Showmens Barber</h3>
+                <p>Barbershop showcase with a confident, modern tone.</p>
+              </div>
+              <a href="https://jonas201422.github.io/showmens-website/" target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-card">
           <div>
-            <h4>JWeb</h4>
-            <p>Designing positive, high-performing web experiences.</p>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s design your next chapter.</h2>
+            <p>
+              I’m ready to build premium, responsive experiences for brands who
+              value detail and atmosphere.
+            </p>
+          </div>
+          <div class="contact-details">
+            <div>
+              <span>Full Name</span>
+              <strong>Jonas Abdulla</strong>
+            </div>
+            <div>
+              <span>Phone</span>
+              <strong>+43 690 10143884</strong>
+            </div>
+            <div>
+              <span>Email</span>
+              <strong>jonasabdulla6@gmail.com</strong>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a class="primary" href="mailto:jonasabdulla6@gmail.com">Email me</a>
+            <a class="secondary" href="tel:+4369010143884">Call now</a>
           </div>
         </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#work">My Work</a>
-          <a href="#contact">Contact</a>
+        <div class="portrait">
+          <img src="pics/pictureOfMe.png" alt="Portrait of Jonas Abdulla" />
+          <div class="portrait-overlay">
+            <span>JWeb</span>
+            <p>Positive digital experiences.</p>
+          </div>
         </div>
-        <p class="footer-note">© 2024 JWeb. All rights reserved.</p>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="pics/logo.webp" alt="JWeb logo" />
+        <div>
+          <strong>JWeb</strong>
+          <span>Bright, responsive web design.</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>© 2024 JWeb. Crafted with clarity and optimism.</p>
+    </footer>
   </body>
 </html>
